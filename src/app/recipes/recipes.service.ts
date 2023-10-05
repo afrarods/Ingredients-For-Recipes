@@ -1,24 +1,28 @@
 import { EventEmitter } from '@angular/core';
 import { Recipe } from './recipe.model';
+import { Ingredient } from '../shared/ingredient.model';
 
 export class RecipesService {
   recipeSelected = new EventEmitter<Recipe>();
 
   private recipes: Recipe[] = [
     new Recipe(
-      'name TestOne',
-      'description TestOne',
-      'https://www.corriecooks.com/wp-content/uploads/2023/01/white-eggplant.jpg'
+      'Beef And Broccoli',
+      'If you want your kids to eat more broccoli, this is the recipe for you.',
+      'https://www.corriecooks.com/wp-content/uploads/2019/10/instant-pot-beef-and-broccoli-new-e1573401783989.jpg',
+      [new Ingredient('Beef', 1), new Ingredient('Broccoli', 10)]
     ),
     new Recipe(
-      'name TestTwo',
-      'description TestTwo',
-      'https://images.deliveryhero.io/image/foodpanda/recipes/igado-recipe-2.jpg'
+      'Shrimp Boil',
+      'It’s a perfect recipe for your next family get-together.',
+      'https://www.corriecooks.com/wp-content/uploads/2019/01/Shrimp-Boil-Served-3.jpg',
+      [new Ingredient('Shrimp', 15), new Ingredient('Corn', 6)]
     ),
     new Recipe(
-      'name TestThree',
-      'description TestThree',
-      'https://hostessatheart.com/wp-content/uploads/2022/09/Oven-Brisket-Recipe-SM-Feature-1200x630-Image-735x386.png.webp'
+      'Chocolate Cake',
+      'To make sure we’re no all going to succumb to our cravings and go live in a house made of cake, I decided that we’re only going to eat sweets we cook in the house.',
+      'https://www.corriecooks.com/wp-content/uploads/2020/01/chocolate-cake-new.jpg',
+      [new Ingredient('Chocolate', 1), new Ingredient('Eggs', 8)]
     ),
   ];
 
