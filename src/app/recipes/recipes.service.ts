@@ -20,7 +20,7 @@ export class RecipesService {
     ),
     new Recipe(
       'Chocolate Cake',
-      'To make sure we’re no all going to succumb to our cravings and go live in a house made of cake, I decided that we’re only going to eat sweets we cook in the house.',
+      'To make sure we’re not all going to succumb to our cravings and go live in a house made of cake, I decided that we’re only going to eat sweets we cook in the house.',
       'https://www.corriecooks.com/wp-content/uploads/2020/01/chocolate-cake-new.jpg',
       [new Ingredient('Chocolate', 1), new Ingredient('Eggs', 8)]
     ),
