@@ -35,9 +35,9 @@ export class AuthComponent {
           console.log(responseData);
           this.isLoading = false;
         },
-        (error) => {
-          console.log(error);
-          this.error = 'Failed to sign up! Try again later.';
+        (errorMessage) => {
+          console.log(errorMessage);
+          this.error = errorMessage;
           this.isLoading = false;
         }
       );
