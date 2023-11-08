@@ -59,7 +59,7 @@ export class AuthComponent {
       },
       error: (errorMessage) => {
         console.log(errorMessage);
-        this.error = errorMessage;
+        this.error = errorMessage.message;
         this.isLoading = false;
       },
       complete: () => console.info('completed'),
